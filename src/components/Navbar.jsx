@@ -1,36 +1,125 @@
-import React from 'react'
-import logo from '../assets/images/remeni logo.png'
-import { Link } from 'react-router'
+import React, { useState } from "react";
+import logo from "../assets/images/remeni logo.png";
+import { Link } from "react-router";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <>
-
-
-    <section id='navbar'>
-      <div className="container">
-        <div className='flex justify-between items-center'>
-
-          <div><img className='w-[100px]' src={logo} alt="my-logo" /></div>
-          <div>
-            <ul className='flex gap-[20px] items-center'>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#333333] hover:text-[#FD6F00]' >Home</Link></li>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#333333] hover:text-[#FD6F00]' >Portfolio</Link></li>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#333333] hover:text-[#FD6F00]' >Blog</Link></li>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#333333] hover:text-[#FD6F00]' >Services</Link></li>
-              </ul>
-          </div>
-          <div>
-
-            <Link className='w-[141px] py-[12px] px-[24px] rounded-[4px] bg-[#FD6F00] hover:bg-[#A53DFF] text-[16px] font-semibold font-main text-[#fff]' to={'/'}>Contact</Link>
-          </div>
+    <nav className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/">
+          <img className="w-24 h-auto" src={logo} alt="my-logo" />
+        </Link>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-8 items-center">
+          <li>
+            <Link
+              to="/"
+              className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/portfolio"
+              className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/blog"
+              className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/services"
+              className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+            >
+              Services
+            </Link>
+          </li>
+        </ul>
+        {/* Contact Button */}
+        <div className="hidden md:block">
+          <Link
+            to="/contact"
+            className="py-3 px-6 rounded bg-[#FD6F00] hover:bg-[#A53DFF] text-base font-semibold font-main text-white transition-colors"
+          >
+            Contact
+          </Link>
         </div>
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden text-2xl text-[#FD6F00] focus:outline-none"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
-    </section>
-    
-  
-    </>
-  )
-}
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-white shadow-lg">
+          <ul className="flex flex-col gap-4 items-center py-6">
+            <li>
+              <Link
+                to="/"
+                className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/portfolio"
+                className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className="text-lg font-bold font-lato text-[#333] hover:text-[#FD6F00] transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="w-full block py-3 px-6 rounded bg-[#FD6F00] hover:bg-[#A53DFF] text-base font-semibold font-main text-white text-center transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;

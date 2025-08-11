@@ -1,44 +1,95 @@
-import React from 'react'
-import { Link } from 'react-router'
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import logo from '../assets/images/remeni logo.png'
+import React from "react";
+import { Link } from "react-router";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
+import logo from "../assets/images/remeni logo.png";
 
 const Footer = () => {
   return (
-    <>
-    
-    <section className='bg-[#2B384C]'>
-        <div className="container">
-            <div className=' flex justify-around items-center'>
-              <div className='w-[80px]'><img src={logo} alt="footer-img" /></div>
-               <div>
-            <ul className='flex gap-[20px] items-center'>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#fff] hover:text-[#FD6F00]' >Home</Link></li>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#fff] hover:text-[#FD6F00]' >Portfolio</Link></li>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#fff] hover:text-[#FD6F00]' >Blog</Link></li>
-              <li><Link to={'/'} className='text-[20px] font-bold font-lato text-[#fff] hover:text-[#FD6F00]' >Services</Link></li>
-              </ul>
-                   </div>
-                       <div  className='  flex gap-[20px] py-[30px] items-center'>
-                        <Link className='w-[30px] h-[30px] bg-[#000] text-[#fff] flex justify-center items-center rounded-full' to={'/'}><FaFacebook /></Link>
-                        <Link className='w-[30px] h-[30px] bg-[#000] text-[#fff] flex justify-center items-center rounded-full' to={'/'}><FaInstagram /></Link>
-                        <Link className='w-[30px] h-[30px] bg-[#000] text-[#fff] flex justify-center items-center rounded-full' to={'/'}><FaLinkedinIn /></Link>
-                        <Link className='w-[30px] h-[30px] bg-[#000] text-[#fff] flex justify-center items-center rounded-full' to={'/'}><FaTwitter /></Link>
-                    </div>              
+    <footer className="bg-[#2B384C] py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Logo */}
+          <Link to={'#'} className="flex-shrink-0 mb-4 md:mb-0">
+            <img src={logo} alt="footer logo" className="w-20 h-auto" />
+          </Link>
+          {/* Navigation */}
+          <ul className="flex flex-wrap gap-6 justify-center">
+            <li>
+              <Link
+                to="/"
+                className="text-lg font-bold font-lato text-white hover:text-[#FD6F00] transition-colors"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/portfolio"
+                className="text-lg font-bold font-lato text-white hover:text-[#FD6F00] transition-colors"
+              >
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/blog"
+                className="text-lg font-bold font-lato text-white hover:text-[#FD6F00] transition-colors"
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className="text-lg font-bold font-lato text-white hover:text-[#FD6F00] transition-colors"
+              >
+                Services
+              </Link>
+            </li>
+          </ul>
+          {/* Social Icons */}
+          <div className="flex gap-4">
+            <a
+              href="#"
+              className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#FD6F00] transition-colors"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="#"
+              className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#FD6F00] transition-colors"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="#"
+              className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#FD6F00] transition-colors"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="#"
+              className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#FD6F00] transition-colors"
+              aria-label="Twitter"
+            >
+              <FaTwitter />
+            </a>
+          </div>
         </div>
-
+        <div className="mt-8 text-center text-sm text-gray-400">
+          &copy; {new Date().getFullYear()} Antor Karmoker. All rights reserved.
+        </div>
       </div>
+    </footer>
+  );
+};
 
-
-    </section>
-    
-    
-
-    </>
-  )
-}
-
-export default Footer
+export default Footer;
