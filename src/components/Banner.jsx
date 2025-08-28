@@ -2,6 +2,9 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import banner3 from "../assets/images/banner3.png";
 import banner2 from "../assets/images/banner2.png";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { TbBrandGithub } from "react-icons/tb";
 
 const Banner = () => {
   const waveRef = useRef(null);
@@ -22,6 +25,37 @@ const Banner = () => {
 
   return (
     <section id="banner" className="relative overflow-hidden h-[805px] pt-[150px] bg-[#101010]">
+      {/* ----------- icons */}
+           <div className="flex flex-col absolute top-[560px] right-[60px] gap-4  ">
+                    <a
+                      className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
+                      href="https://www.facebook.com/antor.web.dev"
+                      aria-label="Facebook"
+                    >
+                      <FaFacebookF />
+                    </a>
+                    <a
+                      className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
+                      href="https://www.instagram.com/antor_web_dev/"
+                      aria-label="Instagram"
+                    >
+                      <FaInstagram />
+                    </a>
+                    <a
+                      className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
+                      href="https://www.linkedin.com/in/antor94/"
+                      aria-label="LinkedIn"
+                    >
+                      <FaLinkedinIn />
+                    </a>
+                    <a 
+                      className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
+                      href="https://github.com/antor94"
+                      aria-label="Twitter"
+                    >
+                      <TbBrandGithub />
+                    </a>
+                  </div>
       <div className="container ">
         <div id="banner-row" className="flex justify-around items-center">
           {/*------------ Left Content */}een
