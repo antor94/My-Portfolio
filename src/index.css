@@ -1,16 +1,15 @@
 @import "tailwindcss";
 
 
-
-
 @utility container {  margin-inline: auto; }
 
+
+/* ------------- variable */
 
 @theme{
 
 
-  /* font */
+  /*----------- font */
+  --font-main : "Poppins", sans-serif;
 
-  --font-lato :  "Lato", sans-serif;
-  --font-main : "Work Sans", sans-serif;
 }

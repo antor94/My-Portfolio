@@ -1,6 +1,8 @@
 import React from "react";
-import CommonHead from "./common/CommonHead";
+
 import { Link } from "react-router";
+import CommonHead from "../components/common/CommonHead";
+import { RxCross1 } from "react-icons/rx";
 
 const projects = [
   {
@@ -49,19 +51,30 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section className="pt-32 pb-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <CommonHead commonh2="Portfolio" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    <section id="portfolio" className="bg-[#101010] h-screen relative">
+      <div className="container ">
+      <div className='pt-[70px] text-center'><CommonHead commonp={'Showcasing some of my best work'} commonh2={'Portfolio'}  /></div>
+
+        <div id="portfolio-row" className="grid grid-cols-3 gap-8 pt-[150px]">
+
+               {/* <!--   Start Code --> */}
+  <div class="wrap">
+    <div class="animated-bar"></div>
+  </div>
+
+  {/* ---------------- cross button */}
+                  <div className=' absolute top-[30px] right-[60px]'><Link to={'/'} ><RxCross1 className='text-[30px] text-white' /></Link>  </div>
+  
+
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-[#959595] rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between hover:scale-105 transition-transform duration-300"
+              className="bg-[#959595] rounded-2xl  overflow-hidden flex flex-col justify-between hover:scale-105 transition-transform duration-300"
             >
               <div className="w-full h-64 bg-[#C6C6C6] flex items-center justify-center">
                 {project.type === "video" ? (
                   <video
-                    className="w-full h-full object-cover"
+                    className=""
                     src={project.src}
                     type="video/mp4"
                     controls
@@ -91,10 +104,10 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-16">
+        <div className="flex justify-center ">
           <Link
             to="/"
-            className="w-60 px-4 py-4 bg-[#FD6F00] text-base font-semibold font-main text-white hover:bg-[#A53DFF] rounded-lg transition-colors"
+            className="w-60 px-4 py-4 mt-[30px] flex justify-center bg-[#FD6F00] text-base font-semibold font-main text-white hover:bg-[#A53DFF] rounded-lg transition-colors"
           >
             More Projects
           </Link>

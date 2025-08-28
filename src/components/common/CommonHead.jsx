@@ -2,10 +2,10 @@ import React from 'react'
 
 const CommonHead = ({commonh2 , commonp}) => {
   return (
-    <div className='text-center'>
+    <div className=''>
 
-        <h2 className='text-[40px] font-bold font-lato text-[#000]'>{commonh2}</h2>
-        <p className='text-[20px] font-medium font-lato text-[#000]'>{commonp}</p>
+        <p className='text-[15px] mb-[17px] font-normal font-main text-[#9F9F9F]'>{commonp}</p>
+        <h2 className='text-[46px] font-bold font-main text-[#F0F0F0]'>{commonh2}</h2>
     </div>
   )
 }
