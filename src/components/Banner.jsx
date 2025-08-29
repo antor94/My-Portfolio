@@ -7,6 +7,10 @@ import { FaFacebookF } from "react-icons/fa";
 import { TbBrandGithub } from "react-icons/tb";
 
 const Banner = () => {
+
+
+
+  
   const waveRef = useRef(null);
 
   useEffect(() => {
@@ -27,7 +31,7 @@ const Banner = () => {
     <section id="banner" className="relative overflow-hidden h-[805px] pt-[150px] bg-[#101010]">
       {/* ----------- icons */}
            <div className="flex flex-col absolute top-[560px] right-[60px] gap-4  ">
-                    <a
+                    <a data-aos="fade-down"
                       className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
                       href="https://www.facebook.com/antor.web.dev"
                       aria-label="Facebook"
@@ -41,7 +45,7 @@ const Banner = () => {
                     >
                       <FaInstagram />
                     </a>
-                    <a
+                    <a  data-aos="fade-up"
                       className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
                       href="https://www.linkedin.com/in/antor94/"
                       aria-label="LinkedIn"
@@ -58,9 +62,9 @@ const Banner = () => {
                   </div>
       <div className="container ">
         <div id="banner-row" className="flex justify-around items-center">
-          {/*------------ Left Content */}een
+          {/*------------ Left Content */}
           <div className="flex flex-col">
-            <h2 className="text-xl font-semibold font-lato text-[#707070]">   Hi, I am  </h2>
+            <h2 data-aos="fade-down" className="text-xl font-semibold font-lato text-[#707070]">   Hi, I am  </h2>
             <h2 className="text-[70px] font-bold font-main text-[#F0F0F0]">  Antor Karmaker </h2>
             {/* ----------- card loading */}
             <div class="card">

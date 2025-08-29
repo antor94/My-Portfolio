@@ -22,13 +22,7 @@ const Contact = () => {
   <div class="wrap">
     <div class="animated-bar"></div>
   </div>
-
         <div id="contact-row" className="pt-[150px] flex justify-center">
-     
-          
-
-
-
           {/* ---------------- cross button */}
           <div className=" absolute top-[30px] right-[60px]">
             <Link to={"/"}>
