@@ -16,19 +16,15 @@ Animation bar effect only use css3 proparty
 */
 .wrap{
   width:60%;
-  margin:150px auto;
-
-  position: absolute;
-  top: 0;
-  left: 900px;
-  padding-top: 60px;
+  
+padding-left: 731px;
+    padding-top: 30px;
     
 }
 .animated-bar {
     height: 4px;
     width: 75px;
     background:#009e66;
-
     position: relative;
 }
 
