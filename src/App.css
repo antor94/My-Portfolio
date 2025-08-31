@@ -11,6 +11,11 @@
   background: #101010;
 }
 
+
+body, html {
+  overflow-x: hidden;
+}
+
 /*
 Animation bar effect only use css3 proparty
 */

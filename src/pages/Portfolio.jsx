@@ -8,7 +8,7 @@ import PortfolioCommon from "../components/common/PortfolioCommon";
 
 const Portfolio = () => {
 return (
-<section id="portfolio" className="bg-[#101010] pb-[20px] relative">
+<section id="portfolio" className="bg-[#101010] min-h-screen pb-[50px] relative">
   <div className="container ">
     <div className='pt-[70px] text-center'>
       <CommonHead commonp={'Showcasing some of my best work'} commonh2={'Portfolio'} />

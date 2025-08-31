@@ -14,7 +14,7 @@ import ServiceCommon from "../components/common/ServiceCommon";
 
 const Service = () => {
   return (
-    <section id="services" className="bg-[#101010]   relative">
+    <section id="services" className="bg-[#101010] min-h-screen relative">
       <div className="container">
             <div className='pt-[70px] text-center'><CommonHead commonp={'Services i offer to my clients'} commonh2={'My Services'}  /></div>
         <div id="service-row" className="">
@@ -38,9 +38,8 @@ const Service = () => {
     <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
     <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
     </div>
-
-{/* ------------ skill part */}
-    <div className="pt-[250px] pb-[50px]">
+    {/* ------------ skill part */}
+    <div className="pt-[250px] pb-[50px] ">
     <div><CommonHead commonh2={'My Skills'} commonp={'My level of knowledge in some tools'} /></div>
     <div  className="flex pt-[70px] justify-between">
 {/* -------- hard-skill */}
@@ -162,6 +161,8 @@ const Service = () => {
 
 </div>
 </div>
+
+
         </div>
       </div>
     </section>

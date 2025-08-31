@@ -5,9 +5,19 @@ import banner2 from "../assets/images/banner2.png";
 import { FaFacebook, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { TbBrandGithub } from "react-icons/tb";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 const Banner = () => {
 
+
+  // ----------- aos animation
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, 
+      once: true,    
+    });
+  }, []);
 
 
   
@@ -28,7 +38,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <section id="banner" className="relative overflow-hidden h-[805px] pt-[150px] bg-[#101010]">
+    <section id="banner" className="relative overflow-hidden  pt-[150px] h-screen bg-[#101010]">
       {/* ----------- icons */}
            <div className="flex flex-col absolute top-[560px] right-[60px] gap-4  ">
                     <a data-aos="fade-down"
@@ -38,7 +48,7 @@ const Banner = () => {
                     >
                       <FaFacebookF />
                     </a>
-                    <a
+                    <a data-aos="fade-left"
                       className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
                       href="https://www.instagram.com/antor_web_dev/"
                       aria-label="Instagram"
@@ -52,10 +62,10 @@ const Banner = () => {
                     >
                       <FaLinkedinIn />
                     </a>
-                    <a 
+                    <a  
                       className="w-8 h-8 bg-black text-white flex justify-center items-center rounded-full hover:bg-[#A53DFF] transition-colors"
                       href="https://github.com/antor94"
-                      aria-label="Twitter"
+                      aria-label="Github"
                     >
                       <TbBrandGithub />
                     </a>
@@ -64,8 +74,8 @@ const Banner = () => {
         <div id="banner-row" className="flex justify-around items-center">
           {/*------------ Left Content */}
           <div className="flex flex-col">
-            <h2 data-aos="fade-down" className="text-xl font-semibold font-lato text-[#707070]">   Hi, I am  </h2>
-            <h2 className="text-[70px] font-bold font-main text-[#F0F0F0]">  Antor Karmaker </h2>
+            <h2  data-aos="flip-left" className="text-xl font-semibold font-lato text-[#707070]">   Hi, I am  </h2>
+            <h2 data-aos="zoom-in" className="text-[70px] font-bold font-main text-[#F0F0F0]">  Antor Karmaker </h2>
             {/* ----------- card loading */}
             <div class="card">
   <div class="loader">
@@ -80,7 +90,7 @@ const Banner = () => {
   </div>
            </div>
           {/* <!-- From Uiverse.io by Masoodaykhan -->  */}
-          <button
+          <button data-aos="zoom-out-down"
             class="font-main flex gap-2 ml-0 mt-[65px]  mx-auto  text-lg text-gray-50 bg-[#009e66] hover:bg-transparent hover:border border-[#009e66] backdrop-blur-md lg:font-semibold isolation-auto  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-[#FFFFFF] hover:text-[#009e66] before:-z-10 before:aspect-square before:hover:scale-200 before:hover:duration-500 relative z-10 px-4 py-2 overflow-hidden  rounded-full group"
             type="submit">
           Hire me
@@ -97,8 +107,8 @@ const Banner = () => {
           </button>
           </div>
           {/* Right Image */}
-            <div className="w-[450px] h-[450px] flex justify-center items-center relative rounded-full bg-[#ffffffdf]  overflow-hidden">
-              <img className=" "  src={banner2} alt="Antor Karmaker portrait" />
+            <div data-aos="zoom-out-left" className="w-[450px] h-[450px] flex justify-center items-center relative rounded-full bg-[#ffffffdf]  overflow-hidden">
+              <img data-aos="zoom-out-left" className=" "  src={banner2} alt="Antor Karmaker portrait" />
             </div>
         </div>
 

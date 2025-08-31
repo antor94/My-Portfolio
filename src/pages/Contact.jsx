@@ -32,7 +32,7 @@ const Contact = () => {
 
           {/*------------- Contact Form */}
           <div className="w-full max-w-[900px] mx-auto px-2 sm:px-4 md:px-8">
-            <h2 className="text-[22px] sm:text-[24px] font-medium font-main text-[#F0F0F0]">
+            <h2  className="text-[22px] sm:text-[24px] font-medium font-main text-[#F0F0F0]">
               Message Me
             </h2>
             <div className="pt-[20px]">
@@ -46,7 +46,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="w-full md:w-1/2">
-                    <input
+                    <input 
                       className="w-full h-12 border bg-[#161616] border-none text-[15px] font-normal font-main text-[#777777] pl-[20px] outline-none "
                       type="email"
                       placeholder="Email"

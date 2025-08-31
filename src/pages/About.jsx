@@ -2,20 +2,8 @@ import React from 'react'
 import CommonHead from '../components/common/CommonHead'
 import { RxCross1 } from "react-icons/rx";
 import { Link } from 'react-router';
-import { LuDownload } from 'react-icons/lu';
-
-
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaUser } from "react-icons/fa";
-
-import banner2 from "../assets/images/banner2.png";
-
-import banner4 from "../assets/images/banner4.png";
 import { SiBasicattentiontoken } from "react-icons/si";
-
+import banner5 from '../assets/images/banner5.png'
 
 
 
@@ -26,7 +14,7 @@ const About = () => {
     <>
     
     {/* --------- profile-part */}
-    <section id='about' className='bg-[#101010]   relative'>
+    <section id='about' className='bg-[#101010] min-h-screen   relative'>
         <div className="container">
             <div className='pt-[70px] text-center'><CommonHead commonp={'Get to know me'} commonh2={'About Me'}  /></div>
             <div id='about-row'>
@@ -39,9 +27,9 @@ const About = () => {
          {/* ---------------- cross button */}
                 <div className=' absolute top-[30px] right-[60px]'><Link to={'/'} ><RxCross1 className='text-[30px] text-white' /></Link>  </div>
                 {/* ---------- images part */}
-                <div className='flex justify-center mt-[180px]'>
+                <div className='flex justify-center  gap-[100px] items-center mt-[180px]'>
                     {/* ------------ left-side */}
-                  <div className='w-[400px] h-[350px] overflow-hidden '><img src="#" alt="my-img" /></div>          
+                  <div className='w-[400px] h-[400px] bg-[#f2f0f0d9] rounded-[20px]  '><img className='flex mt-[-230px] z-20  items-center justify-center' src={banner5} alt="my-img" /></div>          
                     {/* ----------- right-side */}
                     <div>
                     <div>
@@ -85,9 +73,9 @@ const About = () => {
             </div>
             </div>
             {/* ------------- service-part */}
-        <div className='pt-[200px]'>
+        <div className='pt-[180px] pb-[50px]'>
         <div className='pb-[40px]'><CommonHead commonh2={'Choose a Plan'} commonp={'Get started with my services'} /></div>
-        <div id='about2-row' className='flex items-center gap-[30px]' >
+        <div id='about2-row' className='flex items-center gap-[60px]' >
           <div className='w-[390px] h-[600px] text-center bg-[#161616]'>
             <div className='flex justify-center pt-[50px] pb-[30px]'><SiBasicattentiontoken className='text-[#009e66] text-[80px]' /></div>
             <div className='mb-[30px]'>
