@@ -15,21 +15,20 @@ import { IoPaperPlane } from "react-icons/io5";
 
 const Contact = () => {
   return (
-    <section id="contact" className=" bg-[#101010] h-screen relative">
+    <section id="contact" className=" bg-[#101010] min-h-screen relative">
       <div className="container ">
         <div className="pt-[70px] text-center">  <CommonHead  commonp={"Feel free to contact me anytimes"}  commonh2={"Get in Touch"}  /> </div>
-                                  {/* <!--   Start Code --> */}
+       {/* <!--   Start Code --> */}
   <div class="wrap">
     <div class="animated-bar"></div>
   </div>
-        <div id="contact-row" className="pt-[150px] flex justify-center">
+        <div id="contact-row" className=" pt-[50px] lg:pt-[150px] lg:flex justify-center">
           {/* ---------------- cross button */}
-          <div className=" absolute top-[30px] right-[60px]">
+          <div className=" absolute top-4 right-4 lg:top-[30px] lg:right-[60px]">
             <Link to={"/"}>
               <RxCross1 className="text-[30px] text-white" />
             </Link>{" "}
           </div>
-
           {/*------------- Contact Form */}
           <div className="w-full max-w-[900px] mx-auto px-2 sm:px-4 md:px-8">
             <h2  className="text-[22px] sm:text-[24px] font-medium font-main text-[#F0F0F0]">
@@ -76,7 +75,7 @@ const Contact = () => {
             </div>
           </div>
           {/*------------------- Contact Info */}
-          <div className="w-full max-w-[500px] mx-auto mt-10 lg:mt-0 px-2 sm:px-4">
+          <div className="w-full max-w-[500px] mx-auto mt-[100px] pb-[50px] lg:mt-0 px-2 ">
             <h2 className="text-[22px] sm:text-[24px] font-medium font-main text-[#F0F0F0]">
               {" "}
               Contact Info{" "}
@@ -141,7 +140,7 @@ const Contact = () => {
                     href="#"
                     className="text-[14px] hover:text-[#797979] font-normal font-main text-[#9F9F9F]"
                   >
-                    antorremeni
+                    antorremeni@gmail.com
                   </a>
                 </div>
               </div>

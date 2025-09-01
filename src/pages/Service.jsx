@@ -1,5 +1,4 @@
 import React from "react";
-
 import { MdOutlineWeb } from "react-icons/md";
 import { FaFigma, FaReact } from "react-icons/fa";
 import { SiGooglemarketingplatform } from "react-icons/si";
@@ -14,6 +13,11 @@ import ServiceCommon from "../components/common/ServiceCommon";
 
 const Service = () => {
   return (
+
+    <>
+
+
+
     <section id="services" className="bg-[#101010] min-h-screen relative">
       <div className="container">
             <div className='pt-[70px] text-center'><CommonHead commonp={'Services i offer to my clients'} commonh2={'My Services'}  /></div>
@@ -166,6 +170,9 @@ const Service = () => {
         </div>
       </div>
     </section>
+    </>
+
+
   );
 };
 
