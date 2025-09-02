@@ -6,6 +6,8 @@ import { SiBasicattentiontoken } from "react-icons/si";
 import banner5 from "../assets/images/banner5.png";
 import { useRef } from 'react';
 import PixelTransition from "./PixelTransition";
+import ServiceCommon from "../components/common/ServiceCommon";
+import { MdOutlineWeb } from "react-icons/md";
 
 const About = () => {
 
@@ -59,7 +61,7 @@ const About = () => {
 />
 
                 {/* ----------- right-side */}
-                <div className=" pt-[100px]">
+                <div className="">
                   <div className="">
                     <p className=" pl-[30px] lg:pl-0 text-[18px] mx-auto lg:text-[24px] font-medium font-main text-[#009e66]">
                       Who am i?
@@ -130,6 +132,22 @@ const About = () => {
                 </div>
               </div>
             </div>
+                {/* ------------- div-cart */}
+                <div className="mt-[100px] mb-[20px]">
+
+   <div className="pb-[40px] flex justify-center"><CommonHead commonh2={'My Skills'} commonp={'My level of knowledge in some tools'} /></div>
+    <div className="w-[1450px] flex flex-wrap justify-center items-center mt-[2 00px] gap-[30px]  ">
+    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
+    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
+    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
+    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
+    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
+    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
+    </div>
+
+                </div>
+
+
             {/* ------------- service-part */}
             <div className=" pt-[100px] text-center lg:pt-[180px] lg:pb-[50px]">
               <div className="pb-[40px]">

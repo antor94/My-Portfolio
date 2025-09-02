@@ -33,18 +33,10 @@ const Service = () => {
 
 
 
-    {/* ------------- div-cart */}
-    <div className="w-[1450px] flex flex-wrap justify-center items-center pt-[100px] gap-[30px]  ">
-    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
-    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
-    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
-    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
-    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
-    <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
-    </div>
+
     {/* ------------ skill part */}
     <div className="pt-[250px] pb-[50px] ">
-    <div><CommonHead commonh2={'My Skills'} commonp={'My level of knowledge in some tools'} /></div>
+ 
     <div  className="flex pt-[70px] justify-between">
 {/* -------- hard-skill */}
 <div className="w-[1100px]">
