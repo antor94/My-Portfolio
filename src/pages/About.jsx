@@ -9,6 +9,30 @@ import PixelTransition from "./PixelTransition";
 import ServiceCommon from "../components/common/ServiceCommon";
 import { MdOutlineWeb } from "react-icons/md";
 
+import fnt1 from '../assets/images/bootstrap.png'
+import fnt2 from '../assets/images/css-3.png'
+import fnt3 from '../assets/images/vercel.png'
+import fnt4 from '../assets/images/twcss.png'
+import fnt5 from '../assets/images/physics.png'
+import fnt6 from '../assets/images/node-js.png'
+import fnt7 from '../assets/images/next.js.png'
+import fnt8 from '../assets/images/git.png'
+import fnt9 from '../assets/images/github.png'
+import fnt10 from '../assets/images/gitlab.png'
+import fnt11 from '../assets/images/html-5.png'
+import fnt12 from '../assets/images/netlify.png'
+import fnt13 from '../assets/images/js.png'
+import fnt14 from '../assets/images/saas.png'
+import fnt15 from '../assets/images/Vite.png'
+import fnt16 from '../assets/images/social.png'
+import fnt17 from '../assets/images/redux.png'
+import fnt18 from '../assets/images/axious.png'
+import fnt19 from '../assets/images/docs.png'
+import fnt20 from '../assets/images/fatch.png'
+import fnt21 from '../assets/images/figma.png'
+import fnt22 from '../assets/images/jsn.png'
+import fnt23 from '../assets/images/npm.png'
+
 const About = () => {
 
   return (
@@ -135,7 +159,7 @@ const About = () => {
                 {/* ------------- div-cart */}
                 <div className="mt-[100px] mb-[20px]">
 
-   <div className="pb-[40px] flex justify-center"><CommonHead commonh2={'My Skills'} commonp={'My level of knowledge in some tools'} /></div>
+   <div className="pb-[40px] flex justify-center"><CommonHead commonh2={'My Services'} commonp={'Services i offer to my clients'} /></div>
     <div className="w-[1450px] flex flex-wrap justify-center items-center mt-[2 00px] gap-[30px]  ">
     <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
     <ServiceCommon serLogo={<MdOutlineWeb className="text-5xl text-[#009e66]" />} serH2={'Responsive Web Design'}  />
@@ -147,6 +171,253 @@ const About = () => {
 
                 </div>
 
+            <div className='pt-[70px] text-center'><CommonHead commonp={' My level of knowledge in some tools'} commonh2={' My Skills'}  /></div>
+
+            <div className=" flex justify-center items-center gap-[40px]">
+              {/* ---------------- frontend skill */}
+
+              <div className="w-[500px] h-[600px] mt-[80px]  ">
+              <h2 className="w-[234px] text-[20px] font-medium font-main text-[#F0F0F0] border-[#009e66] border-b pb-[5px]">Frontend Development</h2>
+                <div className="flex mt-[30px] flex-wrap justify-center gap-[30px] bg-[#161616]">
+
+                <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt1} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                        <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt2} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Css3</p>
+                </div>
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt3} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Vercel</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt4} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Tailwind Css</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt5} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">React</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt6} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Node.js</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt7} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Next.js</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt8} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Git</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt9} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Github</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt10} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">GitLab</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt11} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Html5</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt12} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Netlify</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt13} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Javascript</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt14} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt15} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt16} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt17} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt18} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                                             <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt19} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt20} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt21} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt22} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt23} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                </div>
+              </div>
+
+{/* ---------------- backend skill */}
+              <div className="w-[500px] h-[600px] mt-[80px]  gap-[30px] ">
+                <div className="flex justify-end mb-[30px]"> <h2 className="w-[234px]  text-[20px] font-medium font-main text-[#F0F0F0] border-[#009e66] border-b pb-[5px]">Backend Development</h2></div>
+                <div className="flex  flex-wrap gap-[30px] bg-[#161616]">
+
+                <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt1} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                        <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt2} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Css3</p>
+                </div>
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt3} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Vercel</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt4} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Tailwind Css</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt5} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">React</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt6} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Node.js</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt7} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Next.js</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt8} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Git</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt9} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Github</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt10} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">GitLab</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt11} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Html5</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt12} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Netlify</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt13} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Javascript</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt14} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt15} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt16} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt17} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                              <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt18} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                                             <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt19} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt20} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt21} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt22} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                      
+                                                   <div className="text-center ">
+                  <img className="w-[50px] text-center" src={fnt23} alt="logo" />
+                  <p className="text-[15px] pt-[15px] font-normal font-main text-[#9F9F9F]">Bootstrap</p>
+                </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
 
             {/* ------------- service-part */}
             <div className=" pt-[100px] text-center lg:pt-[180px] lg:pb-[50px]">
@@ -154,7 +425,7 @@ const About = () => {
                 <CommonHead
                   commonh2={"Choose a Plan"}
                   commonp={"Get started with my services"}
-                />
+                  />
               </div>
               <div id="about2-row" className="   lg:flex justify-center items-center gap-[60px]">
 

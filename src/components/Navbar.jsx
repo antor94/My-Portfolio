@@ -32,7 +32,6 @@ const Navbar = () => {
 
           <li> <Link to="/about"  className="text-[15px] font-normal font-main text-[#E6E6E6]">About</Link></li>
           <li> <Link to="/portfolio"  className="text-[15px] font-normal font-main text-[#E6E6E6]">Portfolio</Link></li>
-          <li> <Link to="/service"  className="text-[15px] font-normal font-main text-[#E6E6E6]">Services</Link></li>
           <li> <Link to="/contact"  className="text-[15px] font-normal font-main text-[#E6E6E6]">Contact</Link></li>
 
 

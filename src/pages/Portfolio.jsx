@@ -16,11 +16,7 @@ const Portfolio = () => {
 
 
 
-
-
-
 return (
-
 
   <>
 
@@ -61,7 +57,7 @@ return (
   </div>
 </div>
 
-  <div className="flex gap-[40px] py-[80px] justify-center">
+  <div className="flex gap-[40px]  justify-center">
   <div className="bg-[#161616] h-[280px] px-[20px] pt-[20px]">
     <h2 className="text-[21px] font-medium font-main text-[#fff]">Can-Vix</h2>
     <div className="w-[500px] pt-[20px] pb-[50px]">
@@ -178,8 +174,9 @@ return (
   </div>
 </div>
 
+{/* ---------- javascript */}
+
   <div className="flex gap-[40px] justify-center">
-  <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
   <div className="bg-[#161616] h-[280px] px-[20px] pt-[20px]">
     <h2 className="text-[21px] font-medium font-main text-[#fff]">Nex-ton</h2>
     <div className="w-[500px] pt-[20px] pb-[50px]">
@@ -190,36 +187,9 @@ return (
     </div>
 
   </div>
-</div>
-
-
-  <div className="flex gap-[40px] justify-center">
   <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
-  <div className="bg-[#161616] h-[280px] px-[20px] pt-[20px]">
-    <h2 className="text-[21px] font-medium font-main text-[#fff]">Nex-ton</h2>
-    <div className="w-[500px] pt-[20px] pb-[50px]">
-    <p className="text-[16px] font-normal font-main text-[#9F9F9F]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque aperiam placeat vitae ab suscipit labore consectetur natus soluta hic quo, nesciunt saepe praesentium corporis doloribus adipisci commodi harum?</p> </div>
-
-    <div className="w-[100px] flex justify-center py-[10px] px-[35px]  hover:text-[#009e66] duration-[.4s] hover:bg-transparent text-base font-semibold font-main text-[#fff] bg-[#009e66] border-[#009e66] rounded-full border">
-      <Link to={'/'} >View</Link>
-    </div>
-
-  </div>
 </div>
 
-  <div className="flex gap-[40px] justify-center">
-  <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
-  <div className="bg-[#161616] h-[280px] px-[20px] pt-[20px]">
-    <h2 className="text-[21px] font-medium font-main text-[#fff]">Nex-ton</h2>
-    <div className="w-[500px] pt-[20px] pb-[50px]">
-    <p className="text-[16px] font-normal font-main text-[#9F9F9F]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque aperiam placeat vitae ab suscipit labore consectetur natus soluta hic quo, nesciunt saepe praesentium corporis doloribus adipisci commodi harum?</p> </div>
-
-    <div className="w-[100px] flex justify-center py-[10px] px-[35px]  hover:text-[#009e66] duration-[.4s] hover:bg-transparent text-base font-semibold font-main text-[#fff] bg-[#009e66] border-[#009e66] rounded-full border">
-      <Link to={'/'} >View</Link>
-    </div>
-
-  </div>
-</div>
 
   <div className="flex gap-[40px] justify-center">
   <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
@@ -236,7 +206,6 @@ return (
 </div>
 
   <div className="flex gap-[40px] justify-center">
-  <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
   <div className="bg-[#161616] h-[280px] px-[20px] pt-[20px]">
     <h2 className="text-[21px] font-medium font-main text-[#fff]">Nex-ton</h2>
     <div className="w-[500px] pt-[20px] pb-[50px]">
@@ -247,7 +216,10 @@ return (
     </div>
 
   </div>
+  <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
 </div>
+
+{/* -------------- firebase */}
 
   <div className="flex gap-[40px] justify-center">
   <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
@@ -263,30 +235,8 @@ return (
   </div>
 </div>
 
-  <div className="flex gap-[40px] justify-center">
-  <div className="w-[400px] h-[350px] bg-red-300"><img src="#" alt="portfolio img" /></div>
-  <div className="bg-[#161616] h-[280px] px-[20px] pt-[20px]">
-    <h2 className="text-[21px] font-medium font-main text-[#fff]">Nex-ton</h2>
-    <div className="w-[500px] pt-[20px] pb-[50px]">
-    <p className="text-[16px] font-normal font-main text-[#9F9F9F]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, doloremque aperiam placeat vitae ab suscipit labore consectetur natus soluta hic quo, nesciunt saepe praesentium corporis doloribus adipisci commodi harum?</p> </div>
-
-    <div className="w-[100px] flex justify-center py-[10px] px-[35px]  hover:text-[#009e66] duration-[.4s] hover:bg-transparent text-base font-semibold font-main text-[#fff] bg-[#009e66] border-[#009e66] rounded-full border">
-      <Link to={'/'} >View</Link>
-    </div>
-
-  </div>
-</div>
-
-
 
 </div>
-
-
-
-
-      
-  
-
     </div>
   </div>
 </section>
